@@ -1,31 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            background-color: #0b132b;
-            color: #ffffff;
-            font-family: "Helvetica", "Arial", sans-serif;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            padding: 0 20px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TrackRevo - Where Every Serial Number Tells A Story</title>
+<meta name="description" content="TrackRevo connects central banks, commercial banks, cash-handling businesses and the public to one trusted record of issued banknotes.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@500;600;700&display=swap">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:#0B6B5D}a:hover{color:#074F44}
+@supports (animation-timeline: scroll()){.to-top{opacity:0;pointer-events:none;animation:to-top-show linear both;animation-timeline:scroll(root);animation-range:0 360px}}
+@keyframes to-top-show{from{opacity:0;pointer-events:none}to{opacity:1;pointer-events:auto}}
+[hidden]{display:none !important}
+body{background:#F7F8FA}
+</style>
 </head>
 <body>
-    <h1>A Revolution is Coming Soon...</h1>
+<div style="font-family: Manrope, Arial, sans-serif; color: #0E1B2B; background: #F7F8FA; line-height: 1.6; overflow-wrap: break-word">
+
+<div id="top" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; column-gap: 24px; row-gap: 4px; padding: 16px clamp(20px, 5vw, 64px); max-width: 1312px; margin: 0 auto; box-sizing: border-box">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: Sora, Arial, sans-serif; font-weight: 700; font-size: 24px; color: #0E1B2B">Track<span style="color: #0B6B5D">Revo</span><sup style="font-size: 11px; font-weight: 600; margin-left: 2px">TM</sup></div>
+<div style="font-size: 12px; font-weight: 500; color: #5A6779">Where Every Serial Number Tells A Story<sup style="font-size: 8px">TM</sup></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; column-gap: 24px; align-items: center; font-size: 15px; font-weight: 500">
+<a href="#how" style="text-decoration: none; color: #0E1B2B; min-height: 44px; display: inline-flex; align-items: center">How it works</a>
+<a href="#solutions" style="text-decoration: none; color: #0E1B2B; min-height: 44px; display: inline-flex; align-items: center">Solutions</a>
+<a href="#trust" style="text-decoration: none; color: #0E1B2B; min-height: 44px; display: inline-flex; align-items: center">Security &amp; trust</a>
+<a href="#contact" style="text-decoration: none; color: #0E1B2B; min-height: 44px; display: inline-flex; align-items: center">Contact us</a>
+</div>
+</div>
+
+<div id="hero" style="max-width: 1312px; margin: 0 auto; padding: clamp(40px, 8vw, 96px) clamp(20px, 5vw, 64px) clamp(56px, 9vw, 104px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 56px); align-items: center">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0B6B5D">Banknote serial verification</div>
+<h1 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: clamp(32px, 8.5vw, 56px); line-height: 1.12; font-weight: 700">Know every note is genuine, before it changes hands.</h1>
+<p style="margin: 0; font-size: clamp(17px, 2.4vw, 20px); color: #3C4A5C; max-width: 560px">TrackRevo<sup style="font-size: 0.55em; line-height: 0">TM</sup> connects central banks, commercial banks, cash-handling businesses and the public to one trusted record of issued banknotes, so stolen and counterfeit cash is caught at the counter instead of after the loss.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
+<div style="flex: 1 1 200px; position: relative">
+<button data-act="toggle" style="width: 100%; background: none; font: inherit; cursor: pointer; box-sizing: border-box; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; text-align: center; color: #0E1B2B; padding: 12px 24px; border-radius: 8px; border: 1.5px solid #C5CDD8; font-weight: 600">Watch Video <span aria-hidden="true">&#9662;</span></button>
+<div id="menu" hidden style="position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 5; background: #FFFFFF; border: 1px solid #DDE3EB; border-radius: 10px; box-shadow: 0 8px 24px rgba(14, 27, 43, 0.14); overflow: hidden">
+<button data-act="open-en" style="width: 100%; box-sizing: border-box; background: none; border: 0; font: inherit; text-align: start; display: flex; align-items: center; min-height: 48px; padding: 0 20px; text-decoration: none; color: #0E1B2B; font-weight: 600; cursor: pointer">English</button>
+<button data-act="open-ar" lang="ar" dir="rtl" style="width: 100%; box-sizing: border-box; background: none; border: 0; font: inherit; text-align: start; display: flex; align-items: center; min-height: 48px; padding: 0 20px; text-decoration: none; color: #0E1B2B; font-weight: 600; border-top: 1px solid #EEF1F5; cursor: pointer">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+</div>
+
+</div>
+<a href="#contact" style="flex: 1 1 200px; box-sizing: border-box; min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none; background: #0B6B5D; color: #FFFFFF; padding: 12px 24px; border-radius: 8px; font-weight: 600">Contact us</a>
+</div>
+</div>
+<div style="flex: 1 1 300px; border-radius: 16px; background: #0E1B2B; color: #FFFFFF; padding: clamp(20px, 5vw, 32px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<svg viewBox="0 0 400 290" role="img" aria-label="Diagram: the central bank sits at the center, sharing serial data with banks and branches, cash businesses and the consumer/public app. Reports flow back to the central bank." style="width: 100%; max-width: 360px; height: auto; margin: 0 auto; display: block" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#2C5A73" stroke-width="2">
+<path d="M200 108 L200 58"/>
+<path d="M160 180 L100 232"/>
+<path d="M240 180 L300 232"/>
+</g>
+<rect x="90" y="108" width="220" height="72" rx="16" fill="none" stroke="#4FD1B5" stroke-width="2">
+<animate attributeName="stroke-width" values="2;16" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.55;0" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="90" y="108" width="220" height="72" rx="16" fill="#0B6B5D" stroke="#4FD1B5" stroke-width="3"/>
+<g fill="#16314A" stroke="#2C5A73" stroke-width="2">
+<rect x="110" y="10" width="180" height="48" rx="12"/>
+<rect x="16" y="232" width="168" height="48" rx="12"/>
+<rect x="216" y="232" width="168" height="48" rx="12"/>
+</g>
+<g font-family="Manrope, Arial, sans-serif" text-anchor="middle">
+<text x="200" y="142" fill="#FFFFFF" font-size="21" font-weight="700">Central bank</text>
+<text x="200" y="163" fill="#BFE9E0" font-size="12" font-weight="500">Issues and oversees</text>
+<g fill="#D5E0EA" font-size="15" font-weight="500">
+<text x="200" y="39">Banks &amp; branches</text>
+<text x="100" y="261">Cash businesses</text>
+<text x="300" y="261">Consumer/public app</text>
+</g>
+</g>
+<circle r="5" fill="#4FD1B5"><animateMotion dur="3s" repeatCount="indefinite" path="M200 108 L200 58"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#4FD1B5"><animateMotion dur="3s" begin="1s" repeatCount="indefinite" path="M160 180 L100 232"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="1s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#4FD1B5"><animateMotion dur="3s" begin="2s" repeatCount="indefinite" path="M240 180 L300 232"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="2s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#F5B83D"><animateMotion dur="3s" begin="0.5s" repeatCount="indefinite" path="M200 58 L200 108"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="0.5s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#F5B83D"><animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M100 232 L160 180"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#F5B83D"><animateMotion dur="3s" begin="2.5s" repeatCount="indefinite" path="M300 232 L240 180"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="2.5s" repeatCount="indefinite"/></circle>
+</svg>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #B8C5D3">
+<div style="display: flex; align-items: center; gap: 8px"><div style="width: 10px; height: 10px; flex: none; border-radius: 50%; background: #4FD1B5"></div>Serial data and alerts</div>
+<div style="display: flex; align-items: center; gap: 8px"><div style="width: 10px; height: 10px; flex: none; border-radius: 50%; background: #F5B83D"></div>Reports from the field</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="ov-en" hidden style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background: rgba(14, 27, 43, 0.9); display: flex; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box">
+<button data-act="close" aria-label="Close video" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: none; border: 0; padding: 0; cursor: pointer"></button>
+<div style="position: relative; width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<div style="font-family: Sora, Arial, sans-serif; font-weight: 600; font-size: 18px; color: #FFFFFF">English</div>
+<div style="display: flex; gap: 20px">
+<button data-act="open-ar" lang="ar" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0; background: none; border: 0; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+<button data-act="close" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0; background: none; border: 0; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">Close &#10005;</button>
+</div>
+</div>
+<video controls preload="none" playsinline style="width: 100%; aspect-ratio: 16 / 9; display: block; border-radius: 12px; background: #0E1B2B"><source src="videos/TrackRevo_English.mp4" type="video/mp4"></video>
+</div>
+</div>
+
+<div id="ov-ar" hidden style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background: rgba(14, 27, 43, 0.9); display: flex; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box">
+<button data-act="close" aria-label="Close video" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: none; border: 0; padding: 0; cursor: pointer"></button>
+<div style="position: relative; width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<div lang="ar" dir="rtl" style="font-family: Sora, Arial, sans-serif; font-weight: 600; font-size: 18px; color: #FFFFFF">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</div>
+<div style="display: flex; gap: 20px">
+<button data-act="open-en" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0; background: none; border: 0; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">English</button>
+<button data-act="close" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0; background: none; border: 0; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">Close &#10005;</button>
+</div>
+</div>
+<video controls preload="none" playsinline style="width: 100%; aspect-ratio: 16 / 9; display: block; border-radius: 12px; background: #0E1B2B"><source src="videos/TrackRevo_Arabic.mp4" type="video/mp4"></video>
+</div>
+</div>
+
+
+<div style="background: #FFFFFF; padding: clamp(56px, 9vw, 88px) 0">
+<div style="max-width: 1312px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(32px, 5vw, 48px)">
+<div style="max-width: 720px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: clamp(26px, 6.5vw, 40px); line-height: 1.18">Cash fraud is hard to see until it is too late.</h2>
+<p style="margin: 0; font-size: clamp(16px, 2.2vw, 18px); color: #3C4A5C">Today, a stolen or counterfeit note looks like any other. Banks and businesses have no shared way to check a note, report a problem, or learn from what others have found.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 22px; font-weight: 600; color: #0B6B5D">The Status Quo</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 260px; border: 1px solid #DDE3EB; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">No shared record</h3>
+<p style="margin: 0; color: #3C4A5C">Each institution works alone, so a note flagged in one place can be accepted in another.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #DDE3EB; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">Slow reporting</h3>
+<p style="margin: 0; color: #3C4A5C">Theft is reported by phone and on paper, so other banks hear about it too late to act.</p>
+</div>
+<div style="flex: 1 1 260px; border: 1px solid #DDE3EB; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">Little visibility</h3>
+<p style="margin: 0; color: #3C4A5C">Central banks struggle to see how cash moves through the system or where problems start.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="how" style="max-width: 1312px; margin: 0 auto; padding: clamp(56px, 10vw, 96px) clamp(20px, 5vw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(32px, 5vw, 48px)">
+<div style="max-width: 720px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: clamp(26px, 6.5vw, 40px); line-height: 1.18">One trusted record, connected end to end.</h2>
+<p style="margin: 0; font-size: clamp(16px, 2.2vw, 18px); color: #3C4A5C">TrackRevo<sup style="font-size: 0.55em; line-height: 0">TM</sup> links everyone who handles cash to the central bank that issues it.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 24px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 48px; height: 48px; border-radius: 50%; background: #0B6B5D; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Sora, Arial, sans-serif; font-weight: 700">1</div>
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 22px">The central bank issues and records</h3>
+<p style="margin: 0; color: #3C4A5C">The central bank keeps the official record of issued banknotes and manages the entities allowed to take part.</p>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 48px; height: 48px; border-radius: 50%; background: #0B6B5D; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Sora, Arial, sans-serif; font-weight: 700">2</div>
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 22px">Banks and businesses verify</h3>
+<p style="margin: 0; color: #3C4A5C">Tellers, ATMs and counting equipment check notes on the spot and report suspected theft or flagged deposits.</p>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 48px; height: 48px; border-radius: 50%; background: #0B6B5D; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Sora, Arial, sans-serif; font-weight: 700">3</div>
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 22px">Warnings spread fast</h3>
+<p style="margin: 0; color: #3C4A5C">Incident and discovery reports are filed and reviewed in one place, so a flagged note is shared with every connected participant within moments.</p>
+</div>
+</div>
+</div>
+
+<div id="solutions" style="background: #FFFFFF; padding: clamp(56px, 10vw, 96px) 0">
+<div style="max-width: 1312px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(32px, 5vw, 48px)">
+<h2 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: clamp(26px, 6.5vw, 40px); line-height: 1.18; max-width: 720px">Built for everyone who touches cash.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 260px; background: #F7F8FA; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">Central banks</h3>
+<p style="margin: 0; color: #3C4A5C">Manage participants, follow reports as they come in, and understand how cash moves, with each country's data kept fully separate.</p>
+</div>
+<div style="flex: 1 1 260px; background: #F7F8FA; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">Banks &amp; branches</h3>
+<p style="margin: 0; color: #3C4A5C">Verify notes at every teller and ATM, manage cash inventory, and handle incident reports with an approval step built in.</p>
+</div>
+<div style="flex: 1 1 260px; background: #F7F8FA; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">Smaller cash businesses</h3>
+<p style="margin: 0; color: #3C4A5C">Currency exchange houses and similar businesses get the same protection from a tablet app, with no server to run.</p>
+</div>
+<div style="flex: 1 1 260px; background: #F7F8FA; border-radius: 12px; padding: clamp(20px, 4vw, 32px); display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: 20px">The public</h3>
+<p style="margin: 0; color: #3C4A5C">Point a phone at a banknote to check its serial number and report anything suspicious in a few taps.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="trust" style="max-width: 1312px; margin: 0 auto; padding: clamp(56px, 10vw, 96px) clamp(20px, 5vw, 64px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 56px); align-items: flex-start">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: clamp(26px, 6.5vw, 40px); line-height: 1.18">Security and privacy by design.</h2>
+<p style="margin: 0; font-size: clamp(16px, 2.2vw, 18px); color: #3C4A5C">Handling money data calls for care. TrackRevo<sup style="font-size: 0.55em; line-height: 0">TM</sup> is built so each party sees only what it needs.</p>
+</div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 24px">
+<div style="border-left: 4px solid #0B6B5D; padding-left: 20px">
+<h3 style="margin: 0 0 4px; font-family: Sora, Arial, sans-serif; font-size: 18px">Customer data stays local</h3>
+<p style="margin: 0; color: #3C4A5C">Customer-level cash records remain with each institution. Only anonymised movement data reaches the central bank.</p>
+</div>
+<div style="border-left: 4px solid #0B6B5D; padding-left: 20px">
+<h3 style="margin: 0 0 4px; font-family: Sora, Arial, sans-serif; font-size: 18px">Separate by country</h3>
+<p style="margin: 0; color: #3C4A5C">Each central bank operates in its own silo, with no data shared across borders.</p>
+</div>
+<div style="border-left: 4px solid #0B6B5D; padding-left: 20px">
+<h3 style="margin: 0 0 4px; font-family: Sora, Arial, sans-serif; font-size: 18px">Controlled access</h3>
+<p style="margin: 0; color: #3C4A5C">Role-based access, reviewed reports and the ability to suspend any participant instantly keep the network trustworthy.</p>
+</div>
+</div>
+</div>
+
+<div id="contact" style="background: #FFFFFF; padding: clamp(56px, 10vw, 96px) 0">
+<div style="max-width: 1312px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 56px); align-items: flex-start">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Sora, Arial, sans-serif; font-size: clamp(26px, 6.5vw, 40px); line-height: 1.18">Get in touch.</h2>
+<p style="margin: 0; font-size: clamp(16px, 2.2vw, 18px); color: #3C4A5C">Questions about TrackRevo<sup style="font-size: 0.55em; line-height: 0">TM</sup>, or interested in bringing it to your institution? Send us a message or write to <a href="mailto:info@trackrevo.com">info@trackrevo.com</a>.</p>
+</div>
+<div style="flex: 1 1 320px; border: 1px solid #DDE3EB; border-radius: 12px; padding: clamp(20px, 4vw, 32px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="name" style="font-size: 14px; font-weight: 600">Name</label>
+<input id="name" type="text" style="font: inherit; font-size: 16px; width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; border: 1.5px solid #C5CDD8; border-radius: 8px">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="org" style="font-size: 14px; font-weight: 600">Organisation</label>
+<input id="org" type="text" style="font: inherit; font-size: 16px; width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; border: 1.5px solid #C5CDD8; border-radius: 8px">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="email" style="font-size: 14px; font-weight: 600">Work email</label>
+<input id="email" type="text" style="font: inherit; font-size: 16px; width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; border: 1.5px solid #C5CDD8; border-radius: 8px">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="msg" style="font-size: 14px; font-weight: 600">Message</label>
+<textarea id="msg" rows="4" style="font: inherit; font-size: 16px; width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1.5px solid #C5CDD8; border-radius: 8px; resize: vertical"></textarea>
+</div>
+<a id="send" href="mailto:info@trackrevo.com" style="box-sizing: border-box; width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; text-decoration: none; background: #0B6B5D; color: #FFFFFF; border-radius: 8px; font-weight: 600">Send message</a>
+<div style="font-size: 13px; color: #5A6779">This opens your email app with your message ready to send to info@trackrevo.com.</div>
+</div>
+</div>
+</div>
+
+<div style="max-width: 1312px; margin: 0 auto; padding: 32px clamp(20px, 5vw, 64px); box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: 14px; color: #5A6779">
+<div>© [YEAR] TrackRevo<sup style="font-size: 0.55em; line-height: 0">TM</sup>. All rights reserved.</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px"><a href="#how">How it works</a><a href="#solutions">Solutions</a><a href="#trust">Security &amp; trust</a></div>
+</div>
+
+<a href="#top" class="to-top" aria-label="Back to top" style="position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); z-index: 10; width: 48px; height: 48px; border-radius: 50%; background: #0B6B5D; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(14, 27, 43, 0.28)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+</div>
+
+<script>
+(function () {
+var menu = document.getElementById('menu');
+var ovEn = document.getElementById('ov-en');
+var ovAr = document.getElementById('ov-ar');
+function closeAll() {
+[ovEn, ovAr].forEach(function (o) { o.hidden = true; o.querySelector('video').pause(); });
+}
+function openOverlay(o) {
+closeAll();
+menu.hidden = true;
+o.hidden = false;
+var p = o.querySelector('video').play();
+if (p && p.catch) { p.catch(function () {}); }
+}
+document.addEventListener('click', function (e) {
+var t = e.target.closest('[data-act]');
+if (!t) { return; }
+var a = t.getAttribute('data-act');
+if (a === 'toggle') { menu.hidden = !menu.hidden; }
+else if (a === 'open-en') { openOverlay(ovEn); }
+else if (a === 'open-ar') { openOverlay(ovAr); }
+else if (a === 'close') { closeAll(); }
+});
+document.addEventListener('keydown', function (e) {
+if (e.key === 'Escape') { closeAll(); menu.hidden = true; }
+});
+var send = document.getElementById('send');
+var ids = ['name', 'org', 'email', 'msg'];
+function update() {
+var v = {};
+ids.forEach(function (id) { v[id] = document.getElementById(id).value; });
+var body = 'Name: ' + v.name + '\nOrganisation: ' + v.org + '\nEmail: ' + v.email + '\n\n' + v.msg;
+send.href = 'mailto:info@trackrevo.com?subject=' + encodeURIComponent('Website inquiry from ' + (v.name || 'a visitor')) + '&body=' + encodeURIComponent(body);
+}
+ids.forEach(function (id) { document.getElementById(id).addEventListener('input', update); });
+update();
+})();
+</script>
 </body>
 </html>
