@@ -101,7 +101,7 @@ body{background:#F7F8FA}
 <button data-act="close" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0; background: none; border: 0; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">Close &#10005;</button>
 </div>
 </div>
-<video controls preload="none" playsinline style="width: 100%; aspect-ratio: 16 / 9; display: block; border-radius: 12px; background: #0E1B2B"><source src="videos/TrackRevo_English.mp4" type="video/mp4"></video>
+<div class="yt" data-id="vs0-hHgVBVQ" style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #0E1B2B"></div>
 </div>
 </div>
 
@@ -115,7 +115,7 @@ body{background:#F7F8FA}
 <button data-act="close" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0; background: none; border: 0; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">Close &#10005;</button>
 </div>
 </div>
-<video controls preload="none" playsinline style="width: 100%; aspect-ratio: 16 / 9; display: block; border-radius: 12px; background: #0E1B2B"><source src="videos/TrackRevo_Arabic.mp4" type="video/mp4"></video>
+<div class="yt" data-id="T84owZOyWT8" style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #0E1B2B"></div>
 </div>
 </div>
 
@@ -258,14 +258,17 @@ var menu = document.getElementById('menu');
 var ovEn = document.getElementById('ov-en');
 var ovAr = document.getElementById('ov-ar');
 function closeAll() {
-[ovEn, ovAr].forEach(function (o) { o.hidden = true; o.querySelector('video').pause(); });
+[ovEn, ovAr].forEach(function (o) {
+o.hidden = true;
+o.querySelector('.yt').innerHTML = '';
+});
 }
 function openOverlay(o) {
 closeAll();
 menu.hidden = true;
+var holder = o.querySelector('.yt');
+holder.innerHTML = '<iframe src="https://www.youtube.com/embed/' + holder.getAttribute('data-id') + '?autoplay=1&rel=0" title="TrackRevo video" style="width: 100%; height: 100%; border: 0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
 o.hidden = false;
-var p = o.querySelector('video').play();
-if (p && p.catch) { p.catch(function () {}); }
 }
 document.addEventListener('click', function (e) {
 var t = e.target.closest('[data-act]');
